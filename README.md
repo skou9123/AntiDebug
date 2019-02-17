@@ -32,6 +32,4 @@ FLG_HEAP_VALIDATE_PARAMETERS (0x40)
   
 #### 攻撃側
 PEB構造体のNtGlobalFlagをソフトウェア側にチェックされる前に  
-0にすればこの対策を無効化できる  
-または  
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options
+0にすればこの対策を無効化できる
