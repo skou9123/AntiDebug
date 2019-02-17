@@ -21,4 +21,24 @@ CheckNtGlobalFlagsAsm64 proc
 	ret
 CheckNtGlobalFlagsAsm64 endp
 
+GetTEBAsm64 proc
+	push rbx
+	xor rbx,rbx
+	xor rax,rax
+	mov rbx, qword ptr gs:[00000030h]
+	mov rax, rbx
+	pop rbx
+	ret
+GetTEBAsm64 endp
+
+GetPEBAsm64 proc
+	push rbx
+	xor rbx,rbx
+	xor rax,rax
+	mov rbx, qword ptr gs:[00000060h]
+	mov rax, rbx
+	pop rbx
+	ret
+GetPEBAsm64 endp
+
 end
